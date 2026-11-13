@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For You ❤️</title>
+<style>
+body {
+  background: #ffe1eb;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px 15px;
+}
+.box {
+  background: white;
+  max-width: 380px;
+  margin: auto;
+  padding: 30px 15px;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px #e9a8bd;
+}
+h1 { color: #ff4380; }
+p { font-size: 18px; }
+button {
+  border: none;
+  border-radius: 25px;
+  padding: 13px 30px;
+  margin: 10px;
+  font-size: 18px;
+}
+.yes { background: #ff4380; color: white; }
+.no { background: #ddd; color: #333; }
+#result {
+  color: #ff4380;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>ဟိတ်... အသက်ရေ ❤️</h1>
+  <div style="font-size:65px">🐻💗</div>
+  <h2>မေးစရာလေးရှိတယ်</h2>
+  <p>အကို့ကို ချစ်ကြည့်ပါလားဟင်? 🥺</p>
+
+  <button class="yes" onclick="yes()">Yes ❤️</button>
+  <button class="no" onclick="no()">No 🙈</button>
+
+  <p id="result"></p>
+</div>
+
+<script>
+function yes() {
+ document.getElementById("result").innerHTML =
+ "Heee! ❤️ အသက်ကို အရမ်းချစ်တယ်နော် 💕";
+}
+function no() {
+ document.getElementById("result").innerHTML =
+ "ဟင့်အင်း... ထပ်စဉ်းစားပေးပါဦး 🥺";
+}
+</script>
+</body>
+</html>
